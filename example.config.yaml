@@ -1,0 +1,9 @@
+node_url_ws: "ws://127.0.0.1:35998"            # Websocket URL for a Zenon node
+pillar_name: ""                                # The Pillar whose delegators are monitored
+
+enable_rocket_chat: true                       
+rocket_chat_url: ""                            # The Rocket Chat server URL
+rocket_chat_username: ""                       # Rocket Chat username for the Delegation Verifier to use
+rocket_chat_password: ""                       # Rocket Chat password for the Delegation Verifier to use
+rocket_chat_delegator_channel_name: ""         # The Rocket Chat channel's name used as the private delegator chat
+rocket_chat_minimum_delegation_weight: 1       # The minimum amount of delegation weight in ZNN required to have access to the delegator chat
