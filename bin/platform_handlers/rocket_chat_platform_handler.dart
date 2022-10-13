@@ -69,7 +69,7 @@ class RocketChatPlatformHandler {
       final delegation = await _node.embedded.pillar.getDelegatedPillar(
           Address.fromPublicKey(HEX.decode(user['Public Key'])));
       if (delegation != null &&
-          delegation.name == Config.pillarName &&
+          delegation.name.toLowerCase() == Config.pillarName.toLowerCase() &&
           (delegation.weight / 100000000) >=
               Config.rocketChatMinimumDelegationWeight) {
         ids.add(user['_id']);
